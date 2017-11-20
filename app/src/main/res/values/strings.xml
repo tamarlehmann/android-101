@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android101</string>
+    <string name="bearer_token">Bearer AAAAAAAAAAAAAAAAAAAAAF7w0wAAAAAAb6kdTQSU%2F5EmGAMD917iN7rZuVE%3D9ssQYqmHSgDTUgLDOW3k155qYVOxrGUaDSeOrW3IqvHeSoRYiu</string>
+    <string name="twitter_list_id">871746761387323394</string>
+    <!--<string name="twitter_list_id">867327333459472384</string>-->
+    <string name="base_url">https://api.twitter.com</string>
+    <string name="app_name">twitterList</string>
+
 </resources>
