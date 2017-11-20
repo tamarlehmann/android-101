@@ -38,7 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/logo"
             tools:text="tweet will go here"
-            android:paddingLeft="55dp"/>
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"/>
 
     </RelativeLayout>
 
