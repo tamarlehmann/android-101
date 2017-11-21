@@ -2,6 +2,7 @@ package com.example.android101;
 
 import com.example.android101.presenter.TweetListPresenter;
 import com.example.android101.presenter.TweetListPresenterImpl;
+import com.example.android101.rxjava.ObservableConfigurer;
 import com.example.android101.service.TweetListService;
 import com.example.android101.service.TweetListServiceImpl;
 import com.example.android101.service.TwitterAPI;
@@ -22,7 +23,7 @@ public class TwitterModule {
     }
 
     @Provides
-    public TweetListPresenter providesTweetListPresenter(TweetListService tweetListService) {
-        return new TweetListPresenterImpl(tweetListService);
+    public TweetListPresenter providesTweetListPresenter(TweetListService tweetListService, ObservableConfigurer observableConfigurer) {
+        return new TweetListPresenterImpl(tweetListService, observableConfigurer);
     }
 }

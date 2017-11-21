@@ -5,6 +5,7 @@ import com.example.android101.model.Tweet;
 import com.example.android101.service.TweetListService;
 
 import java.util.List;
+import io.reactivex.Observable;
 
 import retrofit2.Call;
 
@@ -21,7 +22,7 @@ public class TweetListServiceImpl implements TweetListService {
     }
 
     @Override
-    public Call<List<Tweet>> getTweets(String listId, int count) {
+    public Observable<List<Tweet>> getTweets(String listId, int count) {
         return twitterAPI.getTweets(listId, "extended", 1, count);
     }
 

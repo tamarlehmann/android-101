@@ -20,7 +20,7 @@ import retrofit2.http.Query;
 public interface TwitterAPI {
 
     @GET("1.1/lists/statuses.json")
-    Call<List<Tweet>> getTweets(@Query("list_id") String listId, @Query("tweet_mode") String tweet_mode,
+    Observable<List<Tweet>> getTweets(@Query("list_id") String listId, @Query("tweet_mode") String tweet_mode,
                                 @Query("include_entities") int includeEntities, @Query("count") int count);
 
 }

@@ -3,6 +3,7 @@ package com.example.android101.service;
 import com.example.android101.model.Tweet;
 
 import java.util.List;
+import io.reactivex.Observable;
 
 import retrofit2.Call;
 
@@ -12,5 +13,5 @@ import retrofit2.Call;
 
 public interface TweetListService {
 
-    Call<List<Tweet>> getTweets(String listId, int count);
+    Observable<List<Tweet>> getTweets(String listId, int count);
 }
