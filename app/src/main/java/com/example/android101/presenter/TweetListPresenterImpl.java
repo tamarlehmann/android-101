@@ -48,7 +48,7 @@ public class TweetListPresenterImpl implements TweetListPresenter {
         observableConfigurer.configureObservable(tweetListObs).subscribe(getTweetListObserver());
         }
 
-    private Observer<List<Tweet>> getTweetListObserver() {
+    public Observer<List<Tweet>> getTweetListObserver() {
         DefaultObserver observer = new DefaultObserver() {
             @Override
             public void onNext(Object value) {
@@ -62,7 +62,7 @@ public class TweetListPresenterImpl implements TweetListPresenter {
 
             @Override
             public void onComplete() {
-
+                twitterListMVPView.onTweetsLoadComplete();
             }
         };
         return observer;
