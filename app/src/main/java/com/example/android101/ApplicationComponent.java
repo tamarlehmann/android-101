@@ -12,4 +12,5 @@ import dagger.Component;
 @Component(modules = {TwitterModule.class, ApplicationModule.class, ApiModule.class, RxModule.class})
 public interface ApplicationComponent {
     void inject(MainActivity target);
+
 }
